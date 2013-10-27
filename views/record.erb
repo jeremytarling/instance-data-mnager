@@ -1,0 +1,26 @@
+<h2>details for '<%= @result['preferredLabel'] %>':</h2>
+<table cellpadding="5">
+	<tr>
+		<td>_id:</td>
+		<td><%= @result['_id'] %></td>
+	</tr>
+	<tr>
+		<td>_rev:</td>
+		<td><%= @result['_rev'] %></td>
+	</tr>
+	<tr>
+		<td>preferredLabel:</td>
+		<td><%= @result['preferredLabel'] %></td>
+	</tr>
+	<tr>
+		<td>sameAs:</td>
+		<td><a href="<%= @result['sameAs'] %>"><%= @result['sameAs'] %></a></td>
+	</tr>
+	<tr>
+		<td>disambiguationHint:</td>
+		<td><%= @result['disambiguationHint'] %></td>
+	</tr>
+</table>
+
+<p><a href="/">home</p>
+
