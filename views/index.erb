@@ -1,6 +1,6 @@
-<h2>list of tags in the database:</h2>
+<h2>available datasets:</h2>
 <ul>
-	<% @result['rows'].each do |row| %>
-		<li><a href="/<%= row['value']['_id'] %>"><%= row['value']['preferredLabel']  %></a></li>
-	<% end %>
-</ul></
+	<li><a href="/business-instance-data">Business News instance data</a></li>
+	<li><a href="/local-instance-data">News regions instance data</a></li>
+	<li><a href="/world-instance-data">World News instance data</a></li>
+</ul>

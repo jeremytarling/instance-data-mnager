@@ -1,0 +1,6 @@
+<h2>list of tags in the database:</h2>
+<ul>
+	<% @result['rows'].each do |row| %>
+		<li><a href="/<%= row['value']['_id'] %>"><%= row['value']['preferredLabel']  %></a></li>
+	<% end %>
+</ul></
