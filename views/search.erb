@@ -10,14 +10,6 @@
 
 		<table cellpadding="5">
 			<tr>
-				<td>_id:</td>
-				<td><%= row['value']['_id'] %></td>
-			</tr>
-			<tr>
-				<td>_rev:</td>
-				<td><%= row['value']['_rev'] %></td>
-			</tr>
-			<tr>
 				<td>preferredLabel:</td>
 				<td><%= row['value']['preferredLabel'] %></td>
 			</tr>
@@ -29,10 +21,20 @@
 				<td>disambiguationHint:</td>
 				<td><%= row['value']['disambiguationHint'] %></td>
 			</tr>
+			<tr>
+				<td>_id:</td>
+				<td><%= @result['_id'] %></td>
+			</tr>
+			<tr>
+				<td>_id:</td>
+				<td><%= row['value']['_id'] %></td>
+			</tr>
+			<tr>
+				<td>_rev:</td>
+				<td><%= row['value']['_rev'] %></td>
+			</tr>
 		</table>
 
 	<% end %>
 
 <% end %>
-
-<p><a href="/">home</p>

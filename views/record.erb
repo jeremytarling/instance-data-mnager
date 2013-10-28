@@ -1,13 +1,5 @@
-<h2>details for '<%= @result['preferredLabel'] %>':</h2>
+<h2>details for '<%= @result['preferredLabel'] %>'</h2>
 <table cellpadding="5">
-	<tr>
-		<td>_id:</td>
-		<td><%= @result['_id'] %></td>
-	</tr>
-	<tr>
-		<td>_rev:</td>
-		<td><%= @result['_rev'] %></td>
-	</tr>
 	<tr>
 		<td>preferredLabel:</td>
 		<td><%= @result['preferredLabel'] %></td>
@@ -20,7 +12,17 @@
 		<td>disambiguationHint:</td>
 		<td><%= @result['disambiguationHint'] %></td>
 	</tr>
+	<tr>
+		<td>type:</td>
+		<td><%= @result['type'] %></td>
+	</tr>
+	<tr>
+		<td>_id:</td>
+		<td><%= @result['_id'] %></td>
+	</tr>
+	<tr>
+		<td>_rev:</td>
+		<td><%= @result['_rev'] %></td>
+	</tr>
 </table>
-
-<p><a href="/">home</p>
 

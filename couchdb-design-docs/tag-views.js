@@ -7,6 +7,9 @@
 		},
 		"by_sameAs": {
 			"map": "function(doc) { if (doc.sameAs != null) emit(doc.sameAs, doc) }"
+		},
+		"by_type": {
+			"map": "function(doc) { if (doc.type != null) emit(doc.type, doc) }"
 		}
 	}
 }
