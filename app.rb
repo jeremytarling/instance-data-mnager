@@ -11,7 +11,6 @@ get '/' do
   erb :index
 end
 
-
 get '/:guid' do
   data = RestClient.get "#{DB}/#{params[:guid]}"
   @result = JSON.parse(data)

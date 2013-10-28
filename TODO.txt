@@ -1,0 +1,5 @@
+add 'search for a tag' 
+ - using couch's ?startkey and ?endkey params somehow
+ - example search for Sainsburys: http://localhost:5984/business-instance-data/_design/tag-concepts/_view/by_preferredLabel?startkey=%22Sainsbury's%22&endkey=%22Sainsbury's%22
+ 
+ add create/edit/delete features
