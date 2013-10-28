@@ -1,0 +1,38 @@
+<h2>search results</h2>
+
+<% if @result['rows'].any? == false %>
+
+	<p>no results for <%= params[:query]%></p>
+
+<% else %>
+
+	<% @result['rows'].each do |row| %>
+
+		<table cellpadding="5">
+			<tr>
+				<td>_id:</td>
+				<td><%= row['value']['_id'] %></td>
+			</tr>
+			<tr>
+				<td>_rev:</td>
+				<td><%= row['value']['_rev'] %></td>
+			</tr>
+			<tr>
+				<td>preferredLabel:</td>
+				<td><%= row['value']['preferredLabel'] %></td>
+			</tr>
+			<tr>
+				<td>sameAs:</td>
+				<td><a href="<%= row['value']['sameAs'] %>"><%= row['value']['sameAs'] %></a></td>
+			</tr>
+			<tr>
+				<td>disambiguationHint:</td>
+				<td><%= row['value']['disambiguationHint'] %></td>
+			</tr>
+		</table>
+
+	<% end %>
+
+<% end %>
+
+<p><a href="/">home</p>

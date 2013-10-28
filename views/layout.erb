@@ -4,7 +4,10 @@
 		<link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon"> 
 	</head>
 	<body>
-		<h1>instance data manager</h1>
+		<h1>instance data manager</h1>	
+		<form action="/search" method="POST">
+			<p>search for a tag: <input type="text" name="query" /> <input type="submit" /></p>
+		</form>
 		<%= yield %>
 	</body>
 </html>

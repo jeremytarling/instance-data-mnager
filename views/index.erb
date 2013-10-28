@@ -1,5 +1,4 @@
 <h2>list of tags in the database:</h2>
-<!-- cycles though a JSON serialisation of the couchdb view at http://localhost:5984/business-instance-data/_design/tag-concepts/_view/by_preferredLabel (which is basically a list of every document) and pulls out the preferredLabel and  _id to make an index page -->
 <ul>
 	<% @result['rows'].each do |row| %>
 		<li><a href="/<%= row['value']['_id'] %>"><%= row['value']['preferredLabel']  %></a></li>

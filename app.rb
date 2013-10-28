@@ -16,3 +16,9 @@ get '/:guid' do
   @result = JSON.parse(data)
   erb :record
 end
+
+post '/search' do
+  data = RestClient.get "#{DB}/_design/tag-concepts/_view/by_preferredLabel?key=%22#{params[:query]}%22"
+  @result = JSON.parse(data)
+  erb :search
+end
